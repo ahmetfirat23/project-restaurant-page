@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap");
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background: url(background.jpg) no-repeat fixed;
+  background-size: cover;
+  font-family: "Noto Serif", serif;
+  font-size: 28px;
+  text-align: center;
+  color: hsl(6, 75%, 31%);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(235, 206, 132, 0.95);
+  border-radius: 25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border: hsl(6, 75%, 31%) solid 3px;
+  border-top: none;
+  box-shadow: hsl(6, 75%, 31%) 0px 2px 8px, hsl(6, 75%, 31%) 2px 0px 8px,
+    hsl(6, 75%, 31%) -2px 0px 8px;
+
+  color: hsl(6, 75%, 31%);
+  text-shadow: #e28176 0 0 5px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+
+.btn {
+  padding: 10px 100px 6px 100px;
+}
+
+.btn:nth-child(2n) {
+  border-left: 3px rgba(153, 20, 5, 0.5) solid;
+  border-right: 3px rgba(153, 20, 5, 0.5) solid;
+}
+
+.btn:hover {
+  background-color: hsla(6, 75%, 31%, 0.05);
+  cursor: pointer;
+  padding: 8px 100px 8px 100px;
+  text-shadow: rgba(14, 13, 13, 0.7) 0px 2px 2px;
+}
+
+.btn:active {
+  background-color: hsla(6, 75%, 31%, 0.2);
+}
+
+.btn-selected,
+.btn-selected:hover,
+.btn-selected:active {
+  background-color: hsla(6, 75%, 31%, 0.3);
+  text-shadow: none;
+  padding: 10px 100px 6px 100px;
+}
+
+#home {
+  margin-top: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: hsl(6, 75%, 31%) 3px solid;
+  border-radius: 25px;
+  box-shadow: hsl(6, 75%, 31%) 0px -5px 10px, hsl(6, 75%, 31%) 0px 5px 10px,
+    hsl(6, 75%, 31%) 2px 0px 8px, hsl(6, 75%, 31%) -2px 0px 8px;
+  background-color: rgba(235, 206, 132, 0.9);
+  padding: 45px;
+  padding-bottom: 30px;
+}
+
+#home > h1 {
+  font-style: italic;
+}
+
+#home > i {
+  font-size: 26px;
+}
+
+#home > div {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#ali-photo {
+  border-radius: 25px;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#menu {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: rgba(235, 206, 132, 0.9);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  border: hsl(6, 75%, 31%) 3px solid;
+  border-radius: 25px;
+  box-shadow: hsl(6, 75%, 31%) 0px -5px 10px, hsl(6, 75%, 31%) 0px 5px 10px,
+    hsl(6, 75%, 31%) 2px 0px 8px, hsl(6, 75%, 31%) -2px 0px 8px;
+  background-color: rgba(235, 206, 132, 0.9);
+  padding: 50px;
+  gap: 50px;
+}
+
+.card {
+  height: 300px;
+  width: auto;
+  background-color: #f4eed1;
+  border: #64400d solid 5px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 28px;
+}
+
+.lahmacun-photo {
+  height: 90%;
+  width: 48%;
+  border-radius: 200px;
+}
+
+.card-content > h3 {
+  margin: 0px;
+  margin-bottom: 4px;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.card:hover {
+  background-color: hsl(48, 50%, 80%);
+}
+
+.card-content {
+  margin: 20px;
+  width: 48%;
+}
+
+.lahmacun-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#contact {
+  margin-top: 100px;
+  width: 60%;
+  background-color: rgba(235, 206, 132, 0.9);
+  display: grid;
+  padding: 25px;
+  padding-bottom: 45px;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+
+  box-sizing: border-box;
+  border: hsl(6, 75%, 31%) 3px solid;
+  border-radius: 25px;
+  box-shadow: hsl(6, 75%, 31%) 0px -5px 10px, hsl(6, 75%, 31%) 0px 5px 10px,
+    hsl(6, 75%, 31%) 2px 0px 8px, hsl(6, 75%, 31%) -2px 0px 8px;
+  background-color: rgba(235, 206, 132, 0.9);
+}
+
+#contact > h1 {
+  grid-area: 1/1/2/3;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.contact-label {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+iframe {
+  border-radius: 25px;
+}
